@@ -1,0 +1,66 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #363636;
+}
+
+.header { 
+  background-color: #242F40;
+  color: #E5E5E5;
+}
+
+.contenedorIzquierdo { 
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-gap: 20px;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.principal > img{
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.headerDetails {
+  display: grid;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.headerDetails i {
+  font-size: 25px;
+}
+
+.link { 
+  color: #D0FEF5;
+}
+.headerDetails > div { 
+  margin: 10px 0;
+}
+
+.contenedorDerecho > ul > li {
+  list-style: none;
+  font-size: 30px;
+  font-weight: 600;
+  color: #CCA43B;
+}
+
+#educationSchool {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#titleExperience {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#timePeriod { 
+  font-size: 20px;
+  font-style: italic;
+}
