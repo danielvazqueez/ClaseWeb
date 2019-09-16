@@ -39,14 +39,15 @@ function loadNomineesInfo(data, id) {
           <h4 class="${(categories[i].winner_id == j) ? 'winner' : ''}">
             ${categories[i].nominees[j].nominee}
           </h4>
-          ${(categories[i].winner_id == j) ? '<span>winner</span>' : ''}
+          ${(categories[i].winner_id == j) ? '<span>Winner!</span>' : ''}
+          <p>${categories[i].nominees[j].artist}</p>
+          <p>${categories[i].nominees[j].info}</p>
         </li>
-        <p>${categories[i].nominees[j].artist}</p>
-        <p>${categories[i].nominees[j].info}</p>
       `)
     }
     $('#categories').append(`
       </h3>
+      <hr>
     `);
   }
 }
