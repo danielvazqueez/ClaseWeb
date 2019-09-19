@@ -67,13 +67,13 @@ $('#btn-publicar').on('click', function(event){
   } else {
     $error_comment.addClass('hidden')
   }
-
+  
   $('#seccion_reviews').append(`
     <div class="review">
       <div class="nombre">${$name}</div>
       ${getStarsSpans($stars)}
       <div class="texto">${$comment}</div>
-      <a class="buttonMail" href="mailto:${$email}>Enviar Email</a>
+      <a class="buttonMail" href="mailto:${$email}">Enviar Email</a>
     </div>
   `)  
   limpiar()
