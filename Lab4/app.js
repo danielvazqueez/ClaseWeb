@@ -27,8 +27,10 @@ const forecast = function(longitud, latitud) {
       console.log(error)
     } else {
       const data = response.body;
-      const pronostico = `${data.hourly.summary} Actualmente esta a ${data.currently.temperature}°C. Hay ${data.currently.precipProbability}% de posibilidad de lluvia.`
+      const pronostico = `${data.hourly.summary} Actualmente esta a ${data.currently.temperature}°C, con una sensación térmica de ${data.currently.apparentTemperature}°C. Hay ${data.currently.precipProbability}% de posibilidad de lluvia.`
+      const pronostico2 = `Actualmente esta ${data.currently.summary.toLowerCase()} y para los siguientes dias se espera ${data.daily.summary}`
       console.log(pronostico)
+      console.log(pronostico2)
     }
   })
 }
