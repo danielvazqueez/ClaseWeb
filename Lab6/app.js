@@ -32,7 +32,7 @@ app.get('/weather', function(req, res) {
         error: error
       })
     } else {
-      console.log(data)
+      console.log("Informacion: " + data)
       res.send({
         informacion: data
       })
