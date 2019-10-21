@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather API</title>
+  <style>
+    .invalid {
+      color: red;
+    }
+
+    a.invalid:hover {
+      color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Museum API</h1>
+    <h2><a href="weather?search=Monterrey">Clima en Monterrey</a></h2>
+    <h2><a href="weather?search=New York">Clima en New York</a></h2>
+    <h2><a class="invalid" href="weather?search=Monterrrrrey">Clima en ciudad invalida</a></h2>
+  </div>
+</body>
+</html>
