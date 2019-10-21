@@ -22,7 +22,7 @@ app.get('/', function(req, res) {
 
 app.get('/weather', function(req, res) {
   if (!req.query.search) {
-    res.send({
+    return res.send({
       error: 'Debes enviar el nombre de una ciudad'
     })
   }
