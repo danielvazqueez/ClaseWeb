@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const router = require('./routes.js')
+const path = require('path')
 const port = process.env.PORT || 3000
 const app = express()
 
@@ -15,6 +16,10 @@ mongoose.connect(connectionURL, {
 
 app.use(express.json())
 app.use(router)
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/index.html'))
+})
 
 app.listen(port, function() {
   console.log('Server up and running on port', port)
